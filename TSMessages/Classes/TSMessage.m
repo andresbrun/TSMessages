@@ -417,17 +417,18 @@ __weak static UIViewController *_defaultViewController;
 
 + (BOOL)iOS7StyleEnabled
 {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        // Decide wheter to use iOS 7 style or not based on the running device and the base sdk
-        BOOL iOS7SDK = NO;
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
-        iOS7SDK = YES;
-#endif
-        
-        _useiOS7Style = ! (TS_SYSTEM_VERSION_LESS_THAN(@"7.0") || !iOS7SDK);
-    });
-    return _useiOS7Style;
+    return NO;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        // Decide wheter to use iOS 7 style or not based on the running device and the base sdk
+//        BOOL iOS7SDK = NO;
+//#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+//        iOS7SDK = YES;
+//#endif
+//        
+//        _useiOS7Style = ! (TS_SYSTEM_VERSION_LESS_THAN(@"7.0") || !iOS7SDK);
+//    });
+//    return _useiOS7Style;
 }
 
 @end

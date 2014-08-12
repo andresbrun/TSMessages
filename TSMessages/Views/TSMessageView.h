@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TSMessage.h"
 
-#define TSMessageViewAlpha 0.95
-
-
+#define TSMessageViewAlpha 1
 
 @protocol TSMessageViewProtocol<NSObject>
 @optional
