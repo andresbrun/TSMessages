@@ -417,7 +417,7 @@ __weak static UIViewController *_defaultViewController;
 
 + (BOOL)iOS7StyleEnabled
 {
-    return NO;
+    return YES;
 //    static dispatch_once_t onceToken;
 //    dispatch_once(&onceToken, ^{
 //        // Decide wheter to use iOS 7 style or not based on the running device and the base sdk
